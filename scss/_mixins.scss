@@ -1,0 +1,15 @@
+@mixin d-flex ($display,$justify,$align,$flexdirect) {
+    display: $display;
+    justify-content:$justify;
+    align-items:$align;
+    flex-direction: $flexdirect ;
+}
+
+@mixin hover ($property, $duration, $type, $dely){
+    transition-property: $property ;
+    transition-duration: $duration;
+    transition-timing-function: $type ;
+    transition-delay: $dely;
+
+}
+    

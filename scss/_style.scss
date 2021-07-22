@@ -1,0 +1,81 @@
+.header-cont{
+    max-width:$size01;
+    width: 100%;
+    margin-top: 0 auto;
+    padding-top: $size2;
+    padding-bottom: $size2;
+    .header-wrapper{
+        @include d-flex (flex,space-between,center,none);
+        .logo-block{
+            max-width: $size04;
+            width: 100%;
+            margin:0 auto;
+        }
+        .navigation-block{
+            max-width: $size03;
+            width: 100%;
+            margin:0 auto;
+            .ul{
+                @include d-flex(flex, space-between,none,none);
+                font-family: $fontsfuggle;
+                font-size: $size2;
+                font-weight: bold;
+                color: $color02;
+                @include hover(all, 2s, linear, 3s);
+                &:hover{
+                    color: $color01;
+                }
+            }
+        }
+    }
+}
+.section1-block{
+    background-color: $color01;
+    max-width: $size01 ;
+    width: 100%;
+    height: $size-heigh01;
+    margin: 0 auto;
+    .sect1-content{
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .section1-wrapper{
+        @include d-flex(flex, space-between,center,row);
+        .left-block{
+            max-width: $size03;
+            width: 100%;
+            .title{
+                font-size: 100px;
+                font-weight: bold;
+                color: white;
+                font-family: 'Qahiri';
+            }
+            .left-block-paragraph{
+                max-width: $size05;
+                width: 100%;
+                padding-top: 20px;
+                height: $size04;
+                font-size: $size1;
+                color: white;
+                font-family: $fontsfuggle;
+                font-weight: bold;
+            }
+        }
+        .right-block{
+            max-width: $size03;
+            width: 100%;
+            margin-top: $size1;
+            .image1{
+                max-width: $size03;
+                width: 100%;
+                height: $size-heigh02;
+                border-radius: 50%;
+                @include hover(all, 4s, linear, 2s);
+                &:hover{
+                    max-width: $size-heigh02;
+                }
+            }
+        }
+    }
+}
